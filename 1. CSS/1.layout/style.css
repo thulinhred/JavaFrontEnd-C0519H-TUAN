@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+}
+
+#header{
+    background: brown;
+    height: 100px;
+    width: 100%;
+}
+
+#main{
+    background: aquamarine;
+    height: 300px;
+    width: 75%;
+    float:left;
+}
+
+#sidebar{
+    background: darkorange;
+    height: 300px;
+    width: 25%;
+    float: right; /* dung float cho 2 thang chia nhau chieu rong trang web*/
+}
+
+#footer{
+    background: antiquewhite;
+    height: 100px;
+    width: 100%;
+    clear: both; /* khong cho thuoc tinh khac xuat hien de len footer*/
+}

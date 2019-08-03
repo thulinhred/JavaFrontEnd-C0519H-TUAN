@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+}
+
+#main{
+    background: black;
+    width: 100%;
+    text-align: center;
+}
+#head{
+    background: brown;
+    height: 100px;
+    border: 50px;
+    margin-bottom: 15px;
+
+}
+
+
+#head-link{
+    background: blue;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 15px;
+
+}
+
+#left{
+    background: lime;
+    width: 13.85%;
+    height: 400px;
+    float: left;
+}
+
+#content{
+    background: darkorange;
+    width: 70%;
+    height: 400px;
+    margin: 0px 15px 15px 15px;
+    float: left;
+}
+
+#right{
+    background: darkgray;
+    width: 13.85%;
+    height: 400px;
+    float: right;
+}
+
+#footer{
+    background: blueviolet;
+    height: 100px;
+    width: 100%;
+    margin-top: 15px;
+    clear: both;
+
+}
