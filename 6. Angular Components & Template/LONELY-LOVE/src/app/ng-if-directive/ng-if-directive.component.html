@@ -1,0 +1,37 @@
+<h1 *ngIf="isShowed === true">{{username}}</h1>
+<hr>
+
+<button type="button" class="btn btn-default" (click)="onToggle()">Toggle</button>
+
+
+<div class="radio">
+    <label>
+        <input type="radio" name="rdCheck" (click)="onChange(true)" >
+        Male
+    </label><td></td>
+    <label>
+        <input type="radio" name="rdCheck" (click)="onChange(false)" >
+        Female
+    </label>
+</div>
+
+<h3 *ngIf="isChecked; else elseBlock">Avaiable</h3>
+<ng-template #elseBlock>
+    <h3>Not avaiable</h3>
+</ng-template>
+<hr>
+
+
+<div class="form-group">
+    <label>Age</label>
+    <input type="text" class="form-control" [(ngModel)]="age">
+</div>
+<h3 *ngIf="age > 18; else elseTemplate">
+    Enough
+</h3>
+<ng-template #elseTemplate>
+    Not enough
+</ng-template>
+
+
+

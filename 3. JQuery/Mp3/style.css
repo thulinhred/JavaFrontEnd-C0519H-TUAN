@@ -3,18 +3,18 @@ body{
 	padding: 0px;
 }
 #bg{
-	height: 100vh;
+	margin: 0;
+	float: left;
 	width: 100%;
-	position: absolute;
-	overflow: hidden;
+	height: 625px;
 }
 #bg img{
-	height: 140vh;
+	margin: 0;
+	float: left;
 	width: 100%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	height: 100%;
+	top: 0%;
+	left: 0%;
 	z-index: 1;
 }
 #blackLayer{
@@ -23,16 +23,19 @@ body{
 	background-color: rgba(0, 0, 0,.2);
 	position: absolute;
 	z-index: 99;
+	
 }
 #main{
-	width: 25%;
-	background-color: #fff;
+	margin: 0;
+	width: 100%;
+	background-color:transparent;
 	border-radius: 15px;
 	position: absolute;
-	top: 50%;
+	top: 80%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 999;
+	
 }
 #image img{
 	height: 180px;
@@ -40,28 +43,38 @@ body{
 	margin-top: -5px;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
+	
 }
 #player{
-	padding: 25px;
-	color: #333;
+	margin: 0;
+	width: 100%;
+	height: 200px;
+	color:transparent;
+	
 }
 #songTitle{
-	width: 300px;
+	margin: 0;
+	float: left;
+	width: 40%;
 	text-align: center;
+	color: #ffffff;
 	font-family: monospace;
 	font-size: 18px;
 	position: absolute;
-	top: 60%;
-	left: 50%;
+	top: 50%;
+	left: 25%;
 	transform: translate(-50%, -50%);
+	z-index: 998;
 }
 #buttons{
+	margin: 0;
+	float: left;
 	height: 50px;
-	width: 100%;
+	width: 30%;
 	margin-top: 50px;
 	position: relative;
 	top: 10%;
-	left: 50%;
+	left: 80%;
 	transform: translate(-50%, -50%);
 }
 #play, #next, #pre{
@@ -78,11 +91,13 @@ body{
 	transform: translate(-50%, -50%);
 }
 #next{
+	padding: 15px;
 	width: 45px;
 	height: 45px;
 	left: 80%;
 }
 #pre{
+	padding: 15px;
 	background-color: white;
 	width: 45px;
 	height: 45px;
@@ -95,18 +110,19 @@ body{
 	transform: translate(-50%, -50%);
 }
 #seek-bar{
-	width: 250px;
+	margin: 50px 0 0 70%;
+	float: left;
+	width: 20%;
 	height: 5px;
 	background-color: gray;
 	display: flex;
 	border-radius: 50px;
-	margin-left: 25px;
 	cursor: pointer;
 }
 #fill{
 	height: 5px;
 	width: 10px;
-	background-color: dimgrey;
+	background-color: rgb(60, 175, 108);
 	border-radius: 20px;
 }
 #handle{

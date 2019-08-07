@@ -17,14 +17,14 @@
         <img src="pic-1.jpg" />
     </div>
     <div id="main">
-        <div id="image">
+        <!-- <div id="image">
             <img src="pic-1.jpg" />
-        </div>
+        </div> -->
         <div id="player">
             <div id="songTitle">Title</div>
             <div id="buttons">
                 <button id="pre" onclick="pre();"><img src="pre.png" height="90%" width="90%"></button>
-                <button id="play" onclick="playOrPauseSong();"><img src="pause.jpg" height="90%" width="90%"></button>
+                <button id="play" onclick="playOrPauseSong();"><img src="pause.png" height="90%" width="90%"></button>
                 <button id="next" onclick="next();"><img src="next.png" height="90%" width="90%"></button>
             </div>
 
@@ -51,7 +51,7 @@
     function playOrPauseSong() {
         if (song.paused) {
             song.play();
-            $("#play img").attr("src", "pause.jpg");
+            $("#play img").attr("src", "pause.png");
         } else {
             song.pause();
             $("#play img").attr("src", "play.jpg");
@@ -67,7 +67,7 @@
             currentSong = 0;
         }
         playSong();
-        $("#play img").attr("src", "pause.jpg");
+        $("#play img").attr("src", "pause.png");
         $("#image img").attr("src", poster[currentSong]);
         $("#bg img").attr("src", poster[currentSong]);
     }
@@ -77,7 +77,7 @@
             currentSong = 6;
         }
         playSong();
-        $("#play img").attr("src", "pause.jpg");
+        $("#play img").attr("src", "pause.png");
         $("#image img").attr("src", poster[currentSong]);
         $("#bg img").attr("src", poster[currentSong]);
     }

@@ -1,0 +1,25 @@
+
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let item of names">
+        {{item}}
+    </li>
+</ul>
+
+
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Image</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of products; let i= index ">
+            <td>{{i + 1}}</td>
+            <td>{{item.name}}</td>
+            <td><img src={{item.image}} width="400"></td>
+        </tr>
+    </tbody>
+</table>
+
