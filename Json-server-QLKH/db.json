@@ -1,0 +1,22 @@
+{
+  "courses": [
+    {
+      "id": 5,
+      "name": "Python",
+      "description": "Artifact Intelligence, do you dare?",
+      "fee": 20
+    },
+    {
+      "name": "Rose",
+      "description": "is Red",
+      "fee": 11,
+      "id": 6
+    },
+    {
+      "name": "Avocado",
+      "description": "gg",
+      "fee": 222,
+      "id": 7
+    }
+  ]
+}
